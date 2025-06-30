@@ -1,0 +1,24 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #fffdf5 0%,
+    #fff3b0 30%,
+    #fcd34d 70%,
+    #fbbf24 100%
+  );
+  background-attachment: fixed; /* opcional */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  overflow-x: hidden;
+}
+/* Aplica box-sizing para evitar que inputs e divs quebrem o layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+}

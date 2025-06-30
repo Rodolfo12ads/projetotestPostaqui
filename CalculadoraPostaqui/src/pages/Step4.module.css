@@ -1,0 +1,22 @@
+/* Step4.module.css */
+.page {
+  padding: 2rem;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.selecionado {
+  background-color: #d4f4dd;
+  border-color: #4caf50;
+}

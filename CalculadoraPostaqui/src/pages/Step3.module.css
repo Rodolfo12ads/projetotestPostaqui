@@ -1,0 +1,74 @@
+.page {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: transparent;
+}
+
+.colunas {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Reutilizado da Step2 */
+.dadosConfirmacao {
+  max-width: 300px;
+  min-width: 250px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.dado {
+  margin-bottom: 10px;
+}
+
+.dado strong {
+  color: #0046ad;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.dado span {
+  color: #222;
+}
+
+/* Formulário do Pacote */
+.formularioPacote {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.formularioPacote input,
+.formularioPacote textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formularioPacote button {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #0046ad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formularioPacote button:hover {
+  background-color: #003080;
+}

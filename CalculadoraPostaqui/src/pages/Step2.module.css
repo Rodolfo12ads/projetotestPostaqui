@@ -1,0 +1,52 @@
+.page {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+.title {
+  font-size: 20px;
+  color: #0046ad;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo da caixa com os dados */
+.dadosConfirmacao {
+  width: 100%;
+  max-width: 400px; /* mais largo */
+  height: auto;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  margin: 0 auto 32px auto;
+
+  display: flex;
+  flex-wrap: wrap;         /* permite quebrar linha */
+  gap: 16px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+
+
+.dado {
+  width: calc(50% - 8px); /* 2 colunas */
+  display: flex;
+  flex-direction: column;
+}
+
+.dado strong {
+  color: #0046ad;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.dado span {
+  color: #222;
+  font-size: 13px;
+}
+
