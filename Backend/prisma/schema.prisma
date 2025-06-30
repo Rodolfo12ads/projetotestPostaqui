@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Formulario {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  nome         String
+  cpf          String
+  telefone     String
+  email        String
+  cep          String
+  estado       String
+  cidade       String
+  bairro       String
+  rua          String
+  numero       String
+  complemento  String?
+  destino      Json
+  pacote       Json
+}
+
+
+model PedidoEnvio {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  sender     Json
+  receiver   Json
+  package    Json
+  frete      Json?     
+  escolhido  Json?     
+  rastreio   String?   
+  createdAt  DateTime @default(now())
+}
+
+
+
+
+
+
